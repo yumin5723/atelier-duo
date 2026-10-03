@@ -420,6 +420,33 @@ a:hover {
   display: block;
 }
 
+.cover-device-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.cover-img-wrapper {
+  padding: 2.25rem 1.5rem;
+  background: radial-gradient(circle at center, rgba(197, 160, 89, 0.10) 0%, rgba(12, 12, 14, 0.95) 75%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-height: 340px;
+}
+
+.cover-img-wrapper img {
+  max-height: 320px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.85));
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cover-device-card:hover .cover-img-wrapper img {
+  transform: translateY(-6px) scale(1.02);
+}
+
 .gallery-item-info {
   padding: 1.25rem 1.5rem;
 }
